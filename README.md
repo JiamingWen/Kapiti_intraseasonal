@@ -18,20 +18,24 @@ Details about this study can be found at: https://egusphere.copernicus.org/prepr
  
 ## Analysis Steps
 
-1.
-2. **Data Preprocessing**:
+1. **Data Preprocessing**:
     - Regrid TROPOMI SIF with different quality filtering criteria, test sensitivity of 8-day time series at Kapiti
-      - `tropomi_sensitivity.R` 
-    - Regrid satellite data
-        - ``
+      - `tropomi_sensitivity.R`
+      - `SIFtotal.R`
+    - Regrid all satellite datasets to 0.15 degree
+        - `intra_annual_region.R`
+        - `intra_annual_region_regridding.R`
     - Extract satellite data at the site location
         - ``
         - ``
 2. **Evaluation of satellite SIF datasets with in-situ SIF**:
     - This part was conducted by Dr. Giulia Tagliabue and the scripts are not included in this repository.
 4. **Intra-seasonal dynamics at Kapiti**:
-5. **Intra-seasonal dynamics for the entire HoA drylands**
-6. **Other analyses**
+    - R
+        - `intra_annual_site.R`
+        - `intra_annual_site_NIRvP.R`
+6. **Intra-seasonal dynamics for the entire HoA drylands**
+7. **Other analyses**
     - Test sensitivity of applying different quality filtering criteria for TROPOMI SIF
   
 6. **Figures in the manuscript**:
