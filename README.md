@@ -30,35 +30,39 @@ Details about this study can be found at: https://egusphere.copernicus.org/prepr
     - Calculate multiyear average of LST, NIRv, Precip, SM in HoA
         - `multiyear_region.R`
     - Extract multiyear average at Kapiti
-        - `multiyear_site.R` 
+        - `multiyear_site.R`
+    - Evaluate spatial heterogeneiity around the site location
+        - `heterogeneity.R`
 2. **Evaluation of satellite SIF datasets with in-situ SIF**:
     - This part was conducted by Dr. Giulia Tagliabue and the scripts are not included in this repository.
 3. **Intra-seasonal dynamics at Kapiti**:
     - Evaluate vegetation dynamics at Kapiti between October 2019 and February 2020. 
         - `intra_annual_site.R`
         - `intra_annual_site_NIRvP.R`
-6. **Intra-seasonal dynamics for the entire HoA drylands**
-7. **Other analyses**
-    - Test sensitivity of applying different quality filtering criteria for TROPOMI SIF
-  
-6. **Figures in the manuscript**:
-    - Figure 1: 1c, 1d, 1e - `multiyear_region.R`; 1h - `multiyear_site.R`
+4. **Intra-seasonal dynamics for the entire HoA drylands**
+        - `intra_annual_region_combinedplot_longperiod.R`
+        - `intra_annual_region_combinedplot.R`
+        - `intra_annual_region_combinedplot_met.R`
+        - `intra_annual_region_subregions.R` 
+        - `intra_annual_region_subregions_subperiods.R`
+        - `intra_annual_region_subregions_subperiods_sifyield.R`
+5. **Figures in the manuscript**:
+    - Figure 1: 1b - `MODIS_LC.R`; 1c, 1d, 1e - `multiyear_region.R`; 1h - `multiyear_site.R`
     - Figure 2: N/A
     - Figure 3: `intra_annual_site.R`
     - Figure 4: ``
-    - Figure 5: ``
-    - Figure 6: ``
-    - Figure 7: ``
-    - 
-    - Figure S1: ``
+    - Figure 5-6: `intra_annual_region_combinedplot.R`
+    - Figure 7: `intra_annual_region_subregions_subperiods.R`
+
+    - Figure S1: `heterogeneity.R`
     - Figure S2: N/A
     - Figure S3: `tropomi_sensitivity.R`
     - Figure S4: `intra_annual_site_NIRvP.R`
     - Figure S5: N/A
-    - Figure S6: `` 
-    - Figure S7: ``
-    - Figure S8: ``
-    - Figure S9: ``
-    - Figure S10: ``
-    - Figure S11: ``
-    - Figure S12: ``
+    - Figure S6-S7: `intra_annual_region_combinedplot_longperiod.R`
+    - Figure S8-S11: `intra_annual_region_combinedplot.R`
+    - Figure S12: `intra_annual_region_subregions_subperiods_sifyield.R`
+
+## Contact
+
+For any questions or issues, please contact jwen@carnegiescience.edu.
