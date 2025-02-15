@@ -50,7 +50,7 @@ Details about this study can be found at: https://egusphere.copernicus.org/prepr
     - Figure 1: 1b - `MODIS_LC.R`; 1c, 1d, 1e - `multiyear_region.R`; 1h - `multiyear_site.R`
     - Figure 2: N/A
     - Figure 3: `intra_annual_site.R`
-    - Figure 4: ``
+    - Figure 4: `intra_annual_region_subregions.R`
     - Figure 5-6: `intra_annual_region_combinedplot.R`
     - Figure 7: `intra_annual_region_subregions_subperiods.R`
 
