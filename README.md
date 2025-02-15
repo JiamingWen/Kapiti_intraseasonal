@@ -26,12 +26,15 @@ Details about this study can be found at: https://egusphere.copernicus.org/prepr
         - `intra_annual_region.R`
         - `intra_annual_region_regridding.R`
     - Extract satellite data at the site location
-        - ``
-        - ``
+        - `extract_data.R`
+    - Calculate multiyear average of LST, NIRv, Precip, SM in HoA
+        - `multiyear_region.R`
+    - Extract multiyear average at Kapiti
+        - `multiyear_site.R` 
 2. **Evaluation of satellite SIF datasets with in-situ SIF**:
     - This part was conducted by Dr. Giulia Tagliabue and the scripts are not included in this repository.
-4. **Intra-seasonal dynamics at Kapiti**:
-    - R
+3. **Intra-seasonal dynamics at Kapiti**:
+    - Evaluate vegetation dynamics at Kapiti between October 2019 and February 2020. 
         - `intra_annual_site.R`
         - `intra_annual_site_NIRvP.R`
 6. **Intra-seasonal dynamics for the entire HoA drylands**
@@ -39,19 +42,19 @@ Details about this study can be found at: https://egusphere.copernicus.org/prepr
     - Test sensitivity of applying different quality filtering criteria for TROPOMI SIF
   
 6. **Figures in the manuscript**:
-    - Figure 1: ``
-    - Figure 2: ``
-    - Figure 3: ``
+    - Figure 1: 1c, 1d, 1e - `multiyear_region.R`; 1h - `multiyear_site.R`
+    - Figure 2: N/A
+    - Figure 3: `intra_annual_site.R`
     - Figure 4: ``
     - Figure 5: ``
     - Figure 6: ``
     - Figure 7: ``
     - 
     - Figure S1: ``
-    - Figure S2: ``
+    - Figure S2: N/A
     - Figure S3: `tropomi_sensitivity.R`
-    - Figure S4: ``
-    - Figure S5: ``
+    - Figure S4: `intra_annual_site_NIRvP.R`
+    - Figure S5: N/A
     - Figure S6: `` 
     - Figure S7: ``
     - Figure S8: ``
