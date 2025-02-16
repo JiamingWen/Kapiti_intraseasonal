@@ -14,15 +14,15 @@ Details about this study can be found at: https://egusphere.copernicus.org/prepr
     - Reconstructed SIF products: CSIF, GOSIF, SIF_oco2_005
     - MODIS NIRv
 - Climate variables:
-    - CHIRPS precipitation, ESA-CCI soil moisture, MERRA-2 Air temperature (Tair), water vapor pressure deficit (VPD) and photosynthetically active radiation (PAR)
+    - CHIRPS precipitation, ESA-CCI soil moisture, MERRA-2 air temperature (Tair), water vapor pressure deficit (VPD) and photosynthetically active radiation (PAR)
  
 ## Analysis Steps
 
 1. **Data Preprocessing**:
-    - Regrid TROPOMI SIF with different quality filtering criteria, test sensitivity of 8-day time series at Kapiti
+    - Regrid TROPOMI SIF with different quality filtering criteria, test the sensitivity of derived 8-day time series at Kapiti
       - `tropomi_sensitivity.R`
       - `SIFtotal.R`
-    - Regrid all satellite datasets to 0.15 degree
+    - Regrid all satellite datasets to the same 8-day and 0.15 degree resolutions
         - `intra_annual_region.R`
         - `intra_annual_region_regridding.R`
     - Extract satellite data at the site location
@@ -40,12 +40,14 @@ Details about this study can be found at: https://egusphere.copernicus.org/prepr
         - `intra_annual_site.R`
         - `intra_annual_site_NIRvP.R`
 4. **Intra-seasonal dynamics for the entire HoA drylands**
+    - Evaluate vegetation dynamics in HoA between October 2019 and February 2020. 
         - `intra_annual_region_combinedplot_longperiod.R`
-        - `intra_annual_region_combinedplot.R`
-        - `intra_annual_region_combinedplot_met.R`
-        - `intra_annual_region_subregions.R` 
+        - `intra_annual_region_subregions.R`
+    - Focus on three sub-regions during sub-periods.
         - `intra_annual_region_subregions_subperiods.R`
         - `intra_annual_region_subregions_subperiods_sifyield.R`
+        - `intra_annual_region_combinedplot.R`
+        - `intra_annual_region_combinedplot_met.R`
 5. **Figures in the manuscript**:
     - Figure 1: 1b - `MODIS_LC.R`; 1c, 1d, 1e - `multiyear_region.R`; 1h - `multiyear_site.R`
     - Figure 2: N/A
