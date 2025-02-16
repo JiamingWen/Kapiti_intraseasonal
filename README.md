@@ -19,43 +19,44 @@ Details about this study can be found at: https://egusphere.copernicus.org/prepr
 ## Analysis Steps
 
 1. **Data Preprocessing**:
-    - Regrid TROPOMI SIF with different quality filtering criteria, test the sensitivity of derived 8-day time series at Kapiti
-      - `tropomi_sensitivity.R`
-      - `SIFtotal.R`
-    - Regrid all satellite datasets to the same 8-day and 0.15 degree resolutions
-        - `intra_annual_region.R`
-        - `intra_annual_region_regridding.R`
-    - Extract satellite data at the site location
-        - `extract_data.R`
-    - Calculate multiyear average of LST, NIRv, Precip, SM in HoA
-        - `multiyear_region.R`
-    - Extract multiyear average at Kapiti
-        - `multiyear_site.R`
-    - Evaluate spatial heterogeneiity around the site location
-        - `heterogeneity.R`
+- Regrid TROPOMI SIF with different quality filtering criteria, test the sensitivity of derived 8-day time series at Kapiti
+  - `tropomi_sensitivity.R`
+  - `SIFtotal.R`
+- Regrid all satellite datasets to the same 8-day and 0.15 degree resolutions
+    - `intra_annual_region.R`
+    - `intra_annual_region_regridding.R`
+- Extract satellite data at the site location
+    - `extract_data.R`
+- Calculate multiyear average of LST, NIRv, Precip, SM in HoA
+    - `multiyear_region.R`
+- Extract multiyear average at Kapiti
+    - `multiyear_site.R`
+- Evaluate spatial heterogeneiity around the site location
+    - `heterogeneity.R`
 2. **Evaluation of satellite SIF datasets with in-situ SIF**:
-    - This part was conducted by Dr. Giulia Tagliabue and the scripts are not included in this repository.
+- This part was conducted by Dr. Giulia Tagliabue and the scripts are not included in this repository.
 3. **Intra-seasonal dynamics at Kapiti**:
-    - Evaluate vegetation dynamics at Kapiti between October 2019 and February 2020. 
-        - `intra_annual_site.R`
-        - `intra_annual_site_NIRvP.R`
+- Evaluate vegetation dynamics at Kapiti between October 2019 and February 2020. 
+    - `intra_annual_site.R`
+    - `intra_annual_site_NIRvP.R`
 4. **Intra-seasonal dynamics for the entire HoA drylands**
-    - Evaluate vegetation dynamics in HoA between October 2019 and February 2020. 
-        - `intra_annual_region_combinedplot_longperiod.R`
-        - `intra_annual_region_subregions.R`
-    - Focus on three sub-regions during sub-periods.
-        - `intra_annual_region_subregions_subperiods.R`
-        - `intra_annual_region_subregions_subperiods_sifyield.R`
-        - `intra_annual_region_combinedplot.R`
-        - `intra_annual_region_combinedplot_met.R`
+- Evaluate vegetation dynamics in HoA between October 2019 and February 2020. 
+    - `intra_annual_region_combinedplot_longperiod.R`
+    - `intra_annual_region_subregions.R`
+- Focus on three sub-regions during sub-periods.
+    - `intra_annual_region_subregions_subperiods.R`
+    - `intra_annual_region_subregions_subperiods_sifyield.R`
+    - `intra_annual_region_combinedplot.R`
+    - `intra_annual_region_combinedplot_met.R`
 5. **Figures in the manuscript**:
+- Figures in the main text:
     - Figure 1: 1b - `MODIS_LC.R`; 1c, 1d, 1e - `multiyear_region.R`; 1h - `multiyear_site.R`
     - Figure 2: N/A
     - Figure 3: `intra_annual_site.R`
     - Figure 4: `intra_annual_region_subregions.R`
     - Figure 5-6: `intra_annual_region_combinedplot.R`
     - Figure 7: `intra_annual_region_subregions_subperiods.R`
-
+- Figures in the supplementary:
     - Figure S1: `heterogeneity.R`
     - Figure S2: N/A
     - Figure S3: `tropomi_sensitivity.R`
